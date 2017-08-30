@@ -1,0 +1,23 @@
+body {
+    width: 550px;
+    margin: auto;
+    background: #EAF2EF;
+}
+
+h1{
+    border-bottom: 1px solid black;
+    font-family: 'Raleway', sans-serif;
+}
+
+.square { 
+    height: 80px;
+    width: 80px;
+    font-size: 45pt;
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+}
+
+#message {
+    font-size: 18pt;
+    font-family: 'Amatic SC', cursive;
+}
