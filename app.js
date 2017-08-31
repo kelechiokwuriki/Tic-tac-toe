@@ -1,7 +1,13 @@
+var restartBut = document.getElementById("restart");
+
+restartBut.addEventListener("click", function(){
+    clearBoard();
+    startGame();
+})
+
 function startGame() {
     document.turn = "X";
     setMessage(document.turn + " get's to start");
-    
 }
 
 function setMessage(msg) {
@@ -19,7 +25,7 @@ function nextMove(square) {
     
 }
 
-function disableBoard() {
+function clearBoard() {
     var boards = document.querySelectorAll(".square");
     
     boards.forEach(function(board) {
@@ -41,7 +47,8 @@ function CheckforTie()
 function switchTurn() {
     if(checkForWinner(document.turn)) {
         setMessage("Congrats " + document.turn + ", you won!");
-//        disableBoard();
+        
+//        clearBoard();
         //disable board and call restart function
     }
     else if(CheckforTie()) {
