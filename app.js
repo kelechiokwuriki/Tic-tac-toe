@@ -28,11 +28,24 @@ function disableBoard() {
     
 }
 
+function CheckforTie()
+{
+    for(var i=1;i<10;i++)
+    {
+      if(getBox(i)=="")
+       return false;
+    }
+    return true;
+}
+
 function switchTurn() {
     if(checkForWinner(document.turn)) {
         setMessage("Congrats " + document.turn + ", you won!");
-        disableBoard();
+//        disableBoard();
         //disable board and call restart function
+    }
+    else if(CheckforTie()) {
+        setMessage("Its a TIE..!! Play again...!!!");
     }
     else if(document.turn == "X") {
         document.turn = "O";
