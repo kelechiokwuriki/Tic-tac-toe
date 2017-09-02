@@ -5,13 +5,17 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Comfortaa|Raleway" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
       
         <link rel="stylesheet" href="style.css">
     </head>
     <body onLoad="startGame();">
 <!--        <div class="container">-->
         <h1>Tic tac toe in Javascript</h1>
-        <div id="message">Messages here</div>
+       
+            <div id="message">Messages here</div>
+        
+        
             <table border="1">
                 <tr>
                     <td class="square" id="s1" onClick="nextMove(this)"></td>
@@ -31,6 +35,8 @@
                     <td class="square" id="s9" onClick="nextMove(this)"></td>                 
                 </tr>                
             </table>
+            <button id="restart" class="button">Restart</button>
+
 <!--        </div>-->
         <script src="app.js"> onClick="nextMove(this)"</script>
     </body>

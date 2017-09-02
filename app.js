@@ -48,7 +48,7 @@ function switchTurn() {
     if(checkForWinner(document.turn)) {
         setMessage("Congrats " + document.turn + ", you won!");
         
-//        clearBoard();
+        clearBoard();
         //disable board and call restart function
     }
     else if(CheckforTie()) {
